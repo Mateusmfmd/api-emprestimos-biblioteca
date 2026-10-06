@@ -1,0 +1,2 @@
+import br.com.mateus.biblioteca.Library; import java.time.*;
+public class LibraryTest { public static void main(String[] args){ Library l=new Library(); l.add(new Library.Book("1","Geografia")); var loan=l.borrow("1","u",LocalDate.of(2026,1,1),7); assert loan.due().equals(LocalDate.of(2026,1,8)); assert l.fine("1","u",LocalDate.of(2026,1,10))==4; try{l.borrow("1","v",LocalDate.of(2026,1,2),7); throw new AssertionError();}catch(IllegalStateException ok){} l.giveBack("1","u"); System.out.println("PASS"); } }
