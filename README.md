@@ -1,4 +1,5 @@
 # api-emprestimos-biblioteca
+[![CI](https://github.com/Mateusmfmd/api-emprestimos-biblioteca/actions/workflows/ci.yml/badge.svg)](https://github.com/Mateusmfmd/api-emprestimos-biblioteca/actions/workflows/ci.yml)
 
 Domínio de uma biblioteca em Java 21 com regras de negócio para cadastro de livro, empréstimo, reserva, devolução, prazo e multa. A primeira versão é deliberadamente sem framework e sem banco externo para deixar as regras testáveis e fáceis de estudar.
 
